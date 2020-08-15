@@ -33,7 +33,7 @@ class String
     count << self.split("!")
     count << self.split("?")
     count << self.split(" ")
-    count.delete_if {|w| w.size < 2}
+    count.delete_if {|w| w.size < 1.5}
     count.length
   end
 end
