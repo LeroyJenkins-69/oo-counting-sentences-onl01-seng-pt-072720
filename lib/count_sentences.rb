@@ -32,9 +32,6 @@ class String
     count << self.split(".")
     count << self.split("!")
     count << self.split("?")
-    count.delete_if 
+    count.delete_if {|w| w.size < 1}.size
   end
 end
-
-
-self.split(/\.|\?|\!/).delete_if {|w| w.size < 2}.size
