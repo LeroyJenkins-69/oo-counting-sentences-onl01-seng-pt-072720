@@ -32,7 +32,7 @@ class String
     count << self.split(".")
     count << self.split("!")
     count << self.split("?")
-    ccount << self.split(" ")
+    count << self.split(" ")
     count.delete_if {|w| w.size < 1}.size
   end
 end
